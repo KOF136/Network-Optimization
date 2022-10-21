@@ -1,6 +1,6 @@
 echo "欢迎使用Miku的网络优化脚本"
 echo "本脚本主要对TCP窗口进行优化放大"
-echo "项目地址: https://github.com/Miku-Miku-Miku-Miku/Network-Optimization"
+echo "项目地址: https://github.com/KOF136/Network-Optimization/blob/main/Miku-Tools.sh"
 
 # check root
 [[ $EUID -ne 0 ]] && echo -e "${red}错误：${plain} 请使用root用户运行此脚本！\n" && exit 1
