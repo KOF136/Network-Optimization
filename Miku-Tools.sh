@@ -77,7 +77,6 @@ net.ipv4.tcp_adv_win_scale=1
 net.ipv4.tcp_moderate_rcvbuf=1
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
-fs.file-max=1000000
 EOF
 
 rm -rf /etc/sysctl.d
@@ -95,7 +94,6 @@ net.ipv4.tcp_adv_win_scale=1
 net.ipv4.tcp_moderate_rcvbuf=1
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
-fs.file-max=1000000
 EOF
 
 sysctl -p && sysctl --system
