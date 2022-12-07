@@ -70,6 +70,7 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 #net.ipv4.icmp_echo_ignore_broadcasts=1
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
+
 #开启路由转发
 net.ipv4.conf.all.route_localnet=1
 net.ipv4.ip_forward=1
@@ -132,9 +133,7 @@ net.ipv4.neigh.default.gc_thresh3=8192 #允许的最大临时条目数。当使�
 net.ipv6.neigh.default.gc_thresh1=1024
 net.ipv6.neigh.default.gc_thresh2=4096
 net.ipv6.neigh.default.gc_thresh3=8192
-net.netfilter.nf_conntrack_max=262144
-net.nf_conntrack_max=262144
-net.netfilter.nf_conntrack_tcp_timeout_established=36000 #ESTABLISHED状态连接的超时时间
+
 # TCP窗口
 net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
 net.ipv4.tcp_autocorking=0
@@ -157,6 +156,7 @@ net.ipv4.udp_rmem_min=8192
 net.ipv4.udp_wmem_min=8192
 net.ipv4.tcp_mem=262144 1048576 4194304
 net.ipv4.udp_mem=262144 524288 1048576
+
 # BBR
 net.ipv4.tcp_congestion_control=bbr
 net.core.default_qdisc=fq
@@ -170,6 +170,7 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 #net.ipv4.icmp_echo_ignore_broadcasts=1
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
+
 #开启路由转发
 net.ipv4.conf.all.route_localnet=1
 net.ipv4.ip_forward=1
@@ -232,9 +233,7 @@ net.ipv4.neigh.default.gc_thresh3=8192 #允许的最大临时条目数。当使�
 net.ipv6.neigh.default.gc_thresh1=1024
 net.ipv6.neigh.default.gc_thresh2=4096
 net.ipv6.neigh.default.gc_thresh3=8192
-net.netfilter.nf_conntrack_max=262144
-net.nf_conntrack_max=262144
-net.netfilter.nf_conntrack_tcp_timeout_established=36000 #ESTABLISHED状态连接的超时时间
+
 # TCP窗口
 net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
 net.ipv4.tcp_autocorking=0
@@ -257,6 +256,7 @@ net.ipv4.udp_rmem_min=8192
 net.ipv4.udp_wmem_min=8192
 net.ipv4.tcp_mem=262144 1048576 4194304
 net.ipv4.udp_mem=262144 524288 1048576
+
 # BBR
 net.ipv4.tcp_congestion_control=bbr
 net.core.default_qdisc=fq
