@@ -61,7 +61,7 @@ elif [[ x"${release}" == x"debian" ]]; then
     fi
 fi
 
-ehco "系统配置检测完成，开始配置网络优化"
+echo "系统配置检测完成，开始配置网络优化"
 
 rm -rf /etc/sysctl.conf
 cat >> /etc/sysctl.conf << EOF
