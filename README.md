@@ -4,7 +4,7 @@
 # 使用方法
 以root用户运行以下命令即可
 ```
-bash <(curl -Ls https://github.com/KOF136/Network-Optimization/blob/main/Miku-Tools.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/KOF136/Network-Optimization/main/Miku-Tools.sh)
 ```
 
 # 如果觉得本项目对你有所帮助的话，欢迎点一个Star
