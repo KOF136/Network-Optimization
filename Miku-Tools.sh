@@ -80,9 +80,6 @@ net.ipv4.conf.default.forwarding=1
 net.ipv6.conf.all.forwarding = 1
 net.ipv6.conf.default.forwarding = 1
 net.ipv6.conf.lo.forwarding = 1
-net.ipv6.conf.all.disable_ipv6 = 0
-net.ipv6.conf.default.disable_ipv6 = 0
-net.ipv6.conf.lo.disable_ipv6 = 0
 
 net.ipv6.conf.all.accept_ra = 2
 net.ipv6.conf.default.accept_ra = 2
@@ -180,9 +177,6 @@ net.ipv4.conf.default.forwarding=1
 net.ipv6.conf.all.forwarding = 1
 net.ipv6.conf.default.forwarding = 1
 net.ipv6.conf.lo.forwarding = 1
-net.ipv6.conf.all.disable_ipv6 = 0
-net.ipv6.conf.default.disable_ipv6 = 0
-net.ipv6.conf.lo.disable_ipv6 = 0
 
 net.ipv6.conf.all.accept_ra = 2
 net.ipv6.conf.default.accept_ra = 2
