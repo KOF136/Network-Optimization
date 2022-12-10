@@ -144,26 +144,6 @@ net.ipv4.udp_wmem_min=8192
 net.ipv4.tcp_mem=262144 1048576 4194304
 net.ipv4.udp_mem=262144 524288 1048576
 
-net.ipv6.tcp_fastopen=3 # 开启TCP快速打开
-net.ipv6.tcp_autocorking=0
-net.ipv6.tcp_slow_start_after_idle=0 #关闭TCP的连接传输的慢启动
-net.ipv6.tcp_no_metrics_save=1
-net.ipv6.tcp_ecn=0
-net.ipv6.tcp_frto=0
-net.ipv6.tcp_mtu_probing=0
-net.ipv6.tcp_rfc1337=0
-net.ipv6.tcp_sack=1
-net.ipv6.tcp_fack=1
-net.ipv6.tcp_window_scaling=1
-net.ipv6.tcp_adv_win_scale=1
-net.ipv6.tcp_moderate_rcvbuf=1
-net.ipv6.tcp_rmem=4096 87380 33554432
-net.ipv6.tcp_wmem=4096 16384 33554432
-net.ipv6.udp_rmem_min=8192
-net.ipv6.udp_wmem_min=8192
-net.ipv6.tcp_mem=262144 1048576 4194304
-net.ipv6.udp_mem=262144 524288 1048576
-
 # BBR
 net.ipv4.tcp_congestion_control=bbr
 net.core.default_qdisc=fq
@@ -250,26 +230,6 @@ net.ipv4.udp_rmem_min=8192
 net.ipv4.udp_wmem_min=8192
 net.ipv4.tcp_mem=262144 1048576 4194304
 net.ipv4.udp_mem=262144 524288 1048576
-
-net.ipv6.tcp_fastopen=3 # 开启TCP快速打开
-net.ipv6.tcp_autocorking=0
-net.ipv6.tcp_slow_start_after_idle=0 #关闭TCP的连接传输的慢启动
-net.ipv6.tcp_no_metrics_save=1
-net.ipv6.tcp_ecn=0
-net.ipv6.tcp_frto=0
-net.ipv6.tcp_mtu_probing=0
-net.ipv6.tcp_rfc1337=0
-net.ipv6.tcp_sack=1
-net.ipv6.tcp_fack=1
-net.ipv6.tcp_window_scaling=1
-net.ipv6.tcp_adv_win_scale=1
-net.ipv6.tcp_moderate_rcvbuf=1
-net.ipv6.tcp_rmem=4096 87380 33554432
-net.ipv6.tcp_wmem=4096 16384 33554432
-net.ipv6.udp_rmem_min=8192
-net.ipv6.udp_wmem_min=8192
-net.ipv6.tcp_mem=262144 1048576 4194304
-net.ipv6.udp_mem=262144 524288 1048576
 
 # BBR
 net.ipv4.tcp_congestion_control=bbr
