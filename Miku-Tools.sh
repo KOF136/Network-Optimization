@@ -77,13 +77,6 @@ net.ipv4.ip_forward=1
 net.ipv4.conf.all.forwarding=1
 net.ipv4.conf.default.forwarding=1
 
-net.ipv6.conf.all.forwarding = 1
-net.ipv6.conf.default.forwarding = 1
-net.ipv6.conf.lo.forwarding = 1
-
-net.ipv6.conf.all.accept_ra = 2
-net.ipv6.conf.default.accept_ra = 2
-
 net.ipv4.conf.all.accept_redirects=0
 net.ipv4.conf.default.accept_redirects=0
 net.ipv4.conf.all.secure_redirects=0
@@ -127,9 +120,6 @@ net.ipv4.route.gc_timeout=100
 net.ipv4.neigh.default.gc_thresh1=1024 #最小保存条数。当邻居表中的条数小于该数值，则 GC 不会做任何清理
 net.ipv4.neigh.default.gc_thresh2=4096 #高于该阈值时，GC 会变得更激进，此时存在时间大于 5s 的条目会被清理
 net.ipv4.neigh.default.gc_thresh3=8192 #允许的最大临时条目数。当使用的网卡数很多，或直连了很多其它机器时考虑增大该参数。
-net.ipv6.neigh.default.gc_thresh1=1024
-net.ipv6.neigh.default.gc_thresh2=4096
-net.ipv6.neigh.default.gc_thresh3=8192
 
 # TCP窗口
 net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
@@ -174,13 +164,6 @@ net.ipv4.ip_forward=1
 net.ipv4.conf.all.forwarding=1
 net.ipv4.conf.default.forwarding=1
 
-net.ipv6.conf.all.forwarding = 1
-net.ipv6.conf.default.forwarding = 1
-net.ipv6.conf.lo.forwarding = 1
-
-net.ipv6.conf.all.accept_ra = 2
-net.ipv6.conf.default.accept_ra = 2
-
 net.ipv4.conf.all.accept_redirects=0
 net.ipv4.conf.default.accept_redirects=0
 net.ipv4.conf.all.secure_redirects=0
@@ -224,9 +207,6 @@ net.ipv4.route.gc_timeout=100
 net.ipv4.neigh.default.gc_thresh1=1024 #最小保存条数。当邻居表中的条数小于该数值，则 GC 不会做任何清理
 net.ipv4.neigh.default.gc_thresh2=4096 #高于该阈值时，GC 会变得更激进，此时存在时间大于 5s 的条目会被清理
 net.ipv4.neigh.default.gc_thresh3=8192 #允许的最大临时条目数。当使用的网卡数很多，或直连了很多其它机器时考虑增大该参数。
-net.ipv6.neigh.default.gc_thresh1=1024
-net.ipv6.neigh.default.gc_thresh2=4096
-net.ipv6.neigh.default.gc_thresh3=8192
 
 # TCP窗口
 net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
