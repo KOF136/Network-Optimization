@@ -1,4 +1,4 @@
-echo "欢迎使用Miku的网络优化脚本"
+echo "欢迎使用XuQingLin的网络优化脚本"
 echo "本脚本主要对TCP窗口进行优化放大"
 echo "项目地址: https://github.com/KOF136/Network-Optimization/blob/main/Miku-Tools.sh"
 
