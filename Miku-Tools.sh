@@ -71,21 +71,6 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
 
-#开启路由转发
-net.ipv4.conf.all.route_localnet=1
-net.ipv4.ip_forward=1
-net.ipv4.conf.all.forwarding=1
-net.ipv4.conf.default.forwarding=1
-
-net.ipv4.conf.all.accept_redirects=0
-net.ipv4.conf.default.accept_redirects=0
-net.ipv4.conf.all.secure_redirects=0
-net.ipv4.conf.default.secure_redirects=0
-net.ipv4.conf.all.send_redirects=0
-net.ipv4.conf.default.send_redirects=0
-net.ipv4.conf.default.rp_filter=0
-net.ipv4.conf.all.rp_filter=0
-
 #ARP回应的级别
 #net.ipv4.conf.all.arp_ignore=2
 #net.ipv4.conf.default.arp_ignore=2
@@ -157,21 +142,6 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 #net.ipv4.icmp_echo_ignore_broadcasts=1
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
-
-#开启路由转发
-net.ipv4.conf.all.route_localnet=1
-net.ipv4.ip_forward=1
-net.ipv4.conf.all.forwarding=1
-net.ipv4.conf.default.forwarding=1
-
-net.ipv4.conf.all.accept_redirects=0
-net.ipv4.conf.default.accept_redirects=0
-net.ipv4.conf.all.secure_redirects=0
-net.ipv4.conf.default.secure_redirects=0
-net.ipv4.conf.all.send_redirects=0
-net.ipv4.conf.default.send_redirects=0
-net.ipv4.conf.default.rp_filter=0
-net.ipv4.conf.all.rp_filter=0
 
 #ARP回应的级别
 #net.ipv4.conf.all.arp_ignore=2
