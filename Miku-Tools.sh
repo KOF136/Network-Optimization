@@ -70,6 +70,7 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 #net.ipv4.icmp_echo_ignore_broadcasts=1
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
+net.ipv4.tcp_timestamps=0
 
 #ARP回应的级别
 #net.ipv4.conf.all.arp_ignore=2
@@ -81,7 +82,7 @@ net.ipv4.neigh.default.gc_stale_time=60 #ARP缓存的存活时间
 
 net.ipv4.tcp_syncookies=1 #开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理
 net.ipv4.tcp_retries1=3
-net.ipv4.tcp_retries2=8
+net.ipv4.tcp_retries2=3
 net.ipv4.tcp_syn_retries=2 #SYN重试次数
 net.ipv4.tcp_synack_retries=2 #SYNACK重试次数
 net.ipv4.tcp_tw_reuse=1 #开启TIME-WAIT sockets重用
@@ -111,7 +112,7 @@ net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
 net.ipv4.tcp_autocorking=0
 net.ipv4.tcp_slow_start_after_idle=0 #关闭TCP的连接传输的慢启动
 net.ipv4.tcp_no_metrics_save=1
-net.ipv4.tcp_ecn=0
+net.ipv4.tcp_ecn=1
 net.ipv4.tcp_frto=0
 net.ipv4.tcp_mtu_probing=0
 net.ipv4.tcp_rfc1337=0
@@ -142,6 +143,7 @@ net.core.rps_sock_flow_entries=32768 #rfs 设置此文件至同时活跃连接�
 #net.ipv4.icmp_echo_ignore_broadcasts=1
 fs.file-max=1000000 # 系统级别的能够打开的文件句柄的数量
 fs.inotify.max_user_instances=65536
+net.ipv4.tcp_timestamps=0
 
 #ARP回应的级别
 #net.ipv4.conf.all.arp_ignore=2
@@ -153,7 +155,7 @@ net.ipv4.neigh.default.gc_stale_time=60 #ARP缓存的存活时间
 
 net.ipv4.tcp_syncookies=1 #开启SYN Cookies。当出现SYN等待队列溢出时，启用cookies来处理
 net.ipv4.tcp_retries1=3
-net.ipv4.tcp_retries2=8
+net.ipv4.tcp_retries2=3
 net.ipv4.tcp_syn_retries=2 #SYN重试次数
 net.ipv4.tcp_synack_retries=2 #SYNACK重试次数
 net.ipv4.tcp_tw_reuse=1 #开启TIME-WAIT sockets重用
@@ -183,7 +185,7 @@ net.ipv4.tcp_fastopen=3 # 开启TCP快速打开
 net.ipv4.tcp_autocorking=0
 net.ipv4.tcp_slow_start_after_idle=0 #关闭TCP的连接传输的慢启动
 net.ipv4.tcp_no_metrics_save=1
-net.ipv4.tcp_ecn=0
+net.ipv4.tcp_ecn=1
 net.ipv4.tcp_frto=0
 net.ipv4.tcp_mtu_probing=0
 net.ipv4.tcp_rfc1337=0
