@@ -66,20 +66,10 @@ echo "系统配置检测完成，开始配置网络优化"
 cat >> /etc/sysctl.conf << EOF
 net.core.default_qdisc=fq
 net.ipv4.tcp_congestion_control=bbr
-net.ipv4.tcp_no_metrics_save=1
-net.ipv4.tcp_ecn=0
-net.ipv4.tcp_frto=0
-net.ipv4.tcp_mtu_probing=0
-net.ipv4.tcp_rfc1337=0
-net.ipv4.tcp_sack=1
-net.ipv4.tcp_fack=1
-net.ipv4.tcp_window_scaling=1
-net.ipv4.tcp_adv_win_scale=1
-net.ipv4.tcp_moderate_rcvbuf=1
-net.core.rmem_max=33554432
-net.core.wmem_max=33554432
-net.ipv4.tcp_rmem=4096 87380 33554432
-net.ipv4.tcp_wmem=4096 16384 33554432
+net.core.rmem_max=8388608
+net.core.wmem_max=8388608
+net.ipv4.tcp_rmem=4096 87380 8388608
+net.ipv4.tcp_wmem=4096 16384 8388608
 net.ipv4.udp_rmem_min=8192
 net.ipv4.udp_wmem_min=8192
 net.ipv4.conf.all.route_localnet=1
