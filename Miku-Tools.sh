@@ -63,18 +63,17 @@ fi
 
 echo "系统配置检测完成，开始配置网络优化"
 
+rm -rf /etc/sysctl.conf
 cat >> /etc/sysctl.conf << EOF
-net.core.default_qdisc=fq
-net.ipv4.tcp_congestion_control=bbr
-net.core.rmem_max=16777216
-net.core.wmem_max=16777216
-net.ipv4.tcp_rmem=4096 87380 16777216
-net.ipv4.tcp_wmem=4096 16384 16777216
-net.ipv4.conf.all.route_localnet=1
-net.ipv4.ip_forward=1
-net.ipv4.conf.all.forwarding=1
-net.ipv4.conf.default.forwarding=1
-fs.file-max=1000000
+net.core.default_qdisc=fq #队列算法
+net.ipv4.tcp_congestion_control=bbr #拥塞控制算法
+net.core.rmem_max=16777216 #内核接收数据缓冲值
+net.core.wmem_max=16777216 #内核发送数据缓冲值
+net.ipv4.tcp_rmem=4096 87380 16777216 #TCP接收数据缓冲值
+net.ipv4.tcp_wmem=4096 16384 16777216 #TCP发送数据缓冲值
+net.ipv4.udp_rmem_min=8192 #UDP接收数据缓冲值
+net.ipv4.udp_wmem_min=8192 #UDP发送数据缓冲值
+fs.file-max=1000000 #文件描述符解除限制
 EOF
 
 sysctl -p && sysctl --system
