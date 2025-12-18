@@ -69,9 +69,6 @@ net.core.rmem_max=8388608
 net.core.wmem_max=8388608
 net.ipv4.tcp_rmem=4096 87380 8388608
 net.ipv4.tcp_wmem=4096 16384 8388608
-net.ipv4.udp_rmem_min=8192
-net.ipv4.udp_wmem_min=8192
-fs.file-max=1000000
 EOF
 
 sysctl -p && sysctl --system
